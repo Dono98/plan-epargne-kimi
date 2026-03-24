@@ -1,0 +1,26 @@
+{
+  "name": "Plan 50K",
+  "short_name": "Plan 50K",
+  "description": "Mon plan epargne personnel - Objectif 50 000 euros en 3 ans",
+  "start_url": "/plan-epargne/",
+  "scope": "/plan-epargne/",
+  "display": "standalone",
+  "background_color": "#080d1a",
+  "theme_color": "#080d1a",
+  "orientation": "portrait-primary",
+  "lang": "fr",
+  "icons": [
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}
