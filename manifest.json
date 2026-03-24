@@ -1,7 +1,7 @@
 {
-  "name": "Plan 50K",
-  "short_name": "Plan 50K",
-  "description": "Mon plan epargne personnel - Objectif 50 000 euros en 3 ans",
+  "name": "Plan 27k",
+  "short_name": "Plan 27k",
+  "description": "Mon plan epargne personnel - Objectif 27 000 euros en 3 ans",
   "start_url": "/plan-epargne/",
   "scope": "/plan-epargne/",
   "display": "standalone",
