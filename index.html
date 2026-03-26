@@ -60,6 +60,7 @@ body::after{content:'';position:fixed;bottom:-20%;right:-10%;width:600px;height:
 .tab-btn[data-tab="6"].active{color:#e879f9;border-color:rgba(232,121,249,0.3);}
 .tab-btn[data-tab="6"].active .td{background:#e879f9;}
 
+
 /* =====================
    BOTTOM MOBILE NAV
    ===================== */
@@ -129,6 +130,7 @@ body::after{content:'';position:fixed;bottom:-20%;right:-10%;width:600px;height:
 .mob-btn[data-tab="6"]{color:#e879f9;}
 .mob-btn[data-tab="6"] .mob-label{color:var(--muted);}
 .mob-btn[data-tab="6"].active .mob-label{color:#e879f9;}
+
 
 /* Ripple tap effect */
 .mob-btn:active .mob-icon{transform:scale(0.88);}
@@ -366,7 +368,7 @@ label.fl{display:block;font-size:10px;color:var(--muted);text-transform:uppercas
 
 /* GOAL BANNER */
 .gbanner{background:linear-gradient(135deg,rgba(0,229,160,0.09),rgba(79,163,255,0.05));border:1px solid rgba(0,229,160,0.18);border-radius:18px;padding:26px;text-align:center;position:relative;overflow:hidden;margin-bottom:28px;}
-.gbanner::before{content:'50 000 €';position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);font-family:'Syne',sans-serif;font-size:100px;font-weight:800;color:rgba(0,229,160,0.04);white-space:nowrap;pointer-events:none;}
+.gbanner::before{content:'27 000 €';position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);font-family:'Syne',sans-serif;font-size:100px;font-weight:800;color:rgba(0,229,160,0.04);white-space:nowrap;pointer-events:none;}
 
 /* DONUT */
 .donut{border-radius:50%;position:relative;}
@@ -563,7 +565,7 @@ label.fl{display:block;font-size:10px;color:var(--muted);text-transform:uppercas
     <div class="card">
       <div class="sl">Revenus</div>
       <label class="fl">💰 Salaire net après impôt</label>
-      <div class="fwrap mb" style="margin-bottom:12px;"><input type="number" id="salaire" class="fi" value="2800" oninput="recalc()"><span class="suf">€</span></div>
+      <div class="fwrap mb" style="margin-bottom:12px;"><input type="number" id="salaire" class="fi" value="1800" oninput="recalc()"><span class="suf">€</span></div>
       <label class="fl">🎁 Revenus complémentaires (prime, freelance…)</label>
       <div class="fwrap"><input type="number" id="extra" class="fi" value="0" placeholder="0" oninput="recalc()"><span class="suf">€</span></div>
     </div>
@@ -574,7 +576,7 @@ label.fl{display:block;font-size:10px;color:var(--muted);text-transform:uppercas
       <div class="brow hl"><span class="bl" style="color:var(--text);font-weight:600;">✅ Reste disponible</span><span class="ba" id="s-dispo" style="color:var(--green);font-size:17px;">— €</span></div>
       <div class="brow" style="margin-top:6px;">
         <span class="bl">🛒 Budget vie courante</span>
-        <div class="fwrap" style="width:90px;"><input type="number" id="vie" class="fi" value="400" style="padding:5px 24px 5px 8px;font-size:12px;" oninput="recalc()"><span class="suf" style="right:7px;">€</span></div>
+        <div class="fwrap" style="width:90px;"><input type="number" id="vie" class="fi" value="350" style="padding:5px 24px 5px 8px;font-size:12px;" oninput="recalc()"><span class="suf" style="right:7px;">€</span></div>
       </div>
       <div style="margin-top:12px;background:rgba(0,229,160,0.1);border:1px solid rgba(0,229,160,0.25);border-radius:11px;padding:14px;text-align:center;">
         <div style="font-size:10px;color:var(--muted);text-transform:uppercase;letter-spacing:1px;margin-bottom:3px;">Capacité d'épargne réelle</div>
@@ -614,8 +616,8 @@ label.fl{display:block;font-size:10px;color:var(--muted);text-transform:uppercas
   </div>
 
   <div class="gbanner mb">
-    <h2 style="font-family:'Syne',sans-serif;font-size:42px;font-weight:800;color:var(--green);position:relative;">50 000 €</h2>
-    <p style="color:var(--muted2);margin-top:5px;font-size:13px;position:relative;">Horizon 36 mois · Épargne cible ~1 000 €/mois</p>
+    <h2 style="font-family:'Syne',sans-serif;font-size:42px;font-weight:800;color:var(--green);position:relative;">27 000 €</h2>
+    <p style="color:var(--muted2);margin-top:5px;font-size:13px;position:relative;">Horizon 36 mois · Épargne cible ~750 €/mois</p>
     <div style="background:rgba(255,255,255,0.05);border-radius:100px;height:11px;margin-top:18px;overflow:hidden;">
       <div id="hero-bar" style="height:100%;width:0%;background:linear-gradient(90deg,var(--green),var(--blue));border-radius:100px;transition:width 0.8s ease;"></div>
     </div>
@@ -625,8 +627,8 @@ label.fl{display:block;font-size:10px;color:var(--muted);text-transform:uppercas
   <div class="card mb">
     <div style="font-family:'Syne',sans-serif;font-weight:700;font-size:15px;margin-bottom:16px;">➕ Ajouter un versement du mois</div>
     <div class="g3" style="margin-bottom:14px;">
-      <div><label class="fl">🟦 PEA</label><div class="fwrap"><input type="number" id="t-pea" class="fi" placeholder="700"><span class="suf">€</span></div></div>
-      <div><label class="fl">🟩 Livret A</label><div class="fwrap"><input type="number" id="t-la" class="fi" placeholder="200" style="border-color:rgba(79,163,255,0.25);"><span class="suf">€</span></div></div>
+      <div><label class="fl">🟦 PEA</label><div class="fwrap"><input type="number" id="t-pea" class="fi" placeholder="500"><span class="suf">€</span></div></div>
+      <div><label class="fl">🟩 Livret A</label><div class="fwrap"><input type="number" id="t-la" class="fi" placeholder="150" style="border-color:rgba(79,163,255,0.25);"><span class="suf">€</span></div></div>
       <div><label class="fl">🟨 LDDS</label><div class="fwrap"><input type="number" id="t-ldds" class="fi" placeholder="100" style="border-color:rgba(245,200,66,0.25);"><span class="suf">€</span></div></div>
     </div>
     <div style="display:flex;gap:8px;flex-wrap:wrap;">
@@ -640,7 +642,7 @@ label.fl{display:block;font-size:10px;color:var(--muted);text-transform:uppercas
     <div class="card" style="position:relative;overflow:hidden;">
       <div style="position:absolute;top:0;right:0;bottom:0;width:3px;background:var(--green);border-radius:0 16px 16px 0;"></div>
       <div style="font-family:'Syne',sans-serif;font-weight:700;font-size:13px;margin-bottom:3px;">PEA</div>
-      <div style="font-size:10px;color:var(--muted);margin-bottom:10px;">Objectif 25 200 €</div>
+      <div style="font-size:10px;color:var(--muted);margin-bottom:10px;">Objectif 18 000 €</div>
       <div style="display:flex;justify-content:space-between;align-items:baseline;margin-bottom:7px;"><span id="g-pea-a" style="font-family:'Syne',sans-serif;font-size:20px;font-weight:800;color:var(--green);">0 €</span><span id="g-pea-p" style="font-size:11px;color:var(--muted);font-weight:700;">0%</span></div>
       <div class="pb" style="height:7px;margin-bottom:5px;"><div id="g-pea-b" class="pf" style="width:0%;background:linear-gradient(90deg,var(--green),var(--green-dim));height:7px;"></div></div>
       <div id="g-pea-m" style="font-size:10px;color:var(--muted);">0 mois</div>
@@ -648,7 +650,7 @@ label.fl{display:block;font-size:10px;color:var(--muted);text-transform:uppercas
     <div class="card" style="position:relative;overflow:hidden;">
       <div style="position:absolute;top:0;right:0;bottom:0;width:3px;background:var(--blue);border-radius:0 16px 16px 0;"></div>
       <div style="font-family:'Syne',sans-serif;font-weight:700;font-size:13px;margin-bottom:3px;">Livret A</div>
-      <div style="font-size:10px;color:var(--muted);margin-bottom:10px;">Objectif 4 000 €</div>
+      <div style="font-size:10px;color:var(--muted);margin-bottom:10px;">Objectif 5 400 €</div>
       <div style="display:flex;justify-content:space-between;align-items:baseline;margin-bottom:7px;"><span id="g-la-a" style="font-family:'Syne',sans-serif;font-size:20px;font-weight:800;color:var(--blue);">0 €</span><span id="g-la-p" style="font-size:11px;color:var(--muted);font-weight:700;">0%</span></div>
       <div class="pb" style="height:7px;margin-bottom:5px;"><div id="g-la-b" class="pf" style="width:0%;background:linear-gradient(90deg,var(--blue),#3b82f6);height:7px;"></div></div>
       <div id="g-la-m" style="font-size:10px;color:var(--muted);">0 mois</div>
@@ -699,7 +701,7 @@ label.fl{display:block;font-size:10px;color:var(--muted);text-transform:uppercas
     <div style="display:flex;align-items:center;gap:28px;flex-wrap:wrap;">
       <div style="flex-shrink:0;">
         <div class="donut" style="width:148px;height:148px;background:conic-gradient(var(--green) 0deg 252deg,var(--blue) 252deg 324deg,var(--yellow) 324deg 360deg);box-shadow:0 0 28px rgba(0,229,160,0.15);">
-          <div class="dc"><div class="dv">1 000€</div><div class="ds">/mois</div></div>
+          <div class="dc"><div class="dv">750€</div><div class="ds">/mois</div></div>
         </div>
       </div>
       <div style="flex:1;min-width:200px;">
@@ -713,10 +715,10 @@ label.fl{display:block;font-size:10px;color:var(--muted);text-transform:uppercas
   <div class="card mb">
     <div class="sl">Projection à 3 ans (scénarios)</div>
     <div style="display:flex;flex-direction:column;gap:12px;">
-      <div class="prow"><div class="plbl">Pessimiste<br><span style="font-size:9px;color:var(--muted)">0% rendement</span></div><div class="ptrack"><div class="pfill" style="width:62%;background:linear-gradient(90deg,rgba(255,107,107,0.65),rgba(255,107,107,0.35));color:#fff;">≈ 31 000 €</div><div class="ptgt"></div><div class="ptgtl">50k</div></div></div>
-      <div class="prow"><div class="plbl">Réaliste<br><span style="font-size:9px;color:var(--muted)">+8%/an</span></div><div class="ptrack"><div class="pfill" style="width:82%;background:linear-gradient(90deg,rgba(0,229,160,0.75),rgba(79,163,255,0.55));color:#fff;">≈ 41 000 €</div><div class="ptgt"></div><div class="ptgtl">50k</div></div></div>
-      <div class="prow"><div class="plbl">Optimiste<br><span style="font-size:9px;color:var(--muted)">+12%/an</span></div><div class="ptrack"><div class="pfill" style="width:90%;background:linear-gradient(90deg,rgba(167,139,250,0.75),rgba(79,163,255,0.45));color:#fff;">≈ 45 000 €</div><div class="ptgt"></div><div class="ptgtl">50k</div></div></div>
-      <div class="prow"><div class="plbl">Idéal<br><span style="font-size:9px;color:var(--muted)">1 200€/mois</span></div><div class="ptrack"><div class="pfill" style="width:100%;background:linear-gradient(90deg,var(--green),var(--blue));color:#061010;">≈ 50 000 € 🎯</div></div></div>
+      <div class="prow"><div class="plbl">Pessimiste<br><span style="font-size:9px;color:var(--muted)">0% rendement</span></div><div class="ptrack"><div class="pfill" style="width:62%;background:linear-gradient(90deg,rgba(255,107,107,0.65),rgba(255,107,107,0.35));color:#fff;">≈ 27 000 €</div><div class="ptgt"></div><div class="ptgtl">50k</div></div></div>
+      <div class="prow"><div class="plbl">Réaliste<br><span style="font-size:9px;color:var(--muted)">+8%/an</span></div><div class="ptrack"><div class="pfill" style="width:82%;background:linear-gradient(90deg,rgba(0,229,160,0.75),rgba(79,163,255,0.55));color:#fff;">≈ 29 300 €</div><div class="ptgt"></div><div class="ptgtl">50k</div></div></div>
+      <div class="prow"><div class="plbl">Optimiste<br><span style="font-size:9px;color:var(--muted)">+12%/an</span></div><div class="ptrack"><div class="pfill" style="width:90%;background:linear-gradient(90deg,rgba(167,139,250,0.75),rgba(79,163,255,0.45));color:#fff;">≈ 30 500 €</div><div class="ptgt"></div><div class="ptgtl">50k</div></div></div>
+      <div class="prow"><div class="plbl">Idéal<br><span style="font-size:9px;color:var(--muted)">1 200€/mois</span></div><div class="ptrack"><div class="pfill" style="width:100%;background:linear-gradient(90deg,var(--green),var(--blue));color:#061010;">≈ 27 000 € 🎯</div></div></div>
     </div>
     <div style="margin-top:12px;font-size:11px;color:var(--muted);text-align:center;">Rendements historiques ETF World : ~8-10%/an sur 10 ans. Les performances passées ne garantissent pas les futures.</div>
   </div>
@@ -728,7 +730,7 @@ label.fl{display:block;font-size:10px;color:var(--muted);text-transform:uppercas
       <div style="display:flex;gap:7px;">
         <div style="flex:1;background:rgba(79,163,255,0.08);border:1px solid rgba(79,163,255,0.18);border-radius:7px;padding:9px;text-align:center;"><div style="font-family:'Syne',sans-serif;font-weight:800;color:var(--blue);font-size:15px;">2,4%</div><div style="font-size:9px;color:var(--muted);">Taux actuel</div></div>
         <div style="flex:1;background:rgba(79,163,255,0.08);border:1px solid rgba(79,163,255,0.18);border-radius:7px;padding:9px;text-align:center;"><div style="font-family:'Syne',sans-serif;font-weight:800;color:var(--blue);font-size:13px;">22 950€</div><div style="font-size:9px;color:var(--muted);">Plafond</div></div>
-        <div style="flex:1;background:rgba(79,163,255,0.08);border:1px solid rgba(79,163,255,0.18);border-radius:7px;padding:9px;text-align:center;"><div style="font-family:'Syne',sans-serif;font-weight:800;color:var(--blue);font-size:15px;">200€</div><div style="font-size:9px;color:var(--muted);">/mois</div></div>
+        <div style="flex:1;background:rgba(79,163,255,0.08);border:1px solid rgba(79,163,255,0.18);border-radius:7px;padding:9px;text-align:center;"><div style="font-family:'Syne',sans-serif;font-weight:800;color:var(--blue);font-size:15px;">150€</div><div style="font-size:9px;color:var(--muted);">/mois</div></div>
       </div>
     </div>
     <div class="card">
@@ -761,7 +763,7 @@ label.fl{display:block;font-size:10px;color:var(--muted);text-transform:uppercas
       <div style="background:var(--surface2);border:1px solid rgba(0,229,160,0.2);border-radius:12px;padding:14px;">
         <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
           <div><div style="font-weight:700;font-size:14px;">Amundi MSCI World</div><div style="font-size:10px;color:var(--muted);margin-top:2px;">1 600+ entreprises mondiales</div></div>
-          <span class="ap">280 €</span>
+          <span class="ap">200 €</span>
         </div>
         <div style="display:flex;align-items:center;gap:10px;">
           <span class="tkr">CW8</span>
@@ -772,7 +774,7 @@ label.fl{display:block;font-size:10px;color:var(--muted);text-transform:uppercas
       <div style="background:var(--surface2);border:1px solid rgba(79,163,255,0.2);border-radius:12px;padding:14px;">
         <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
           <div><div style="font-weight:700;font-size:14px;">Amundi S&P 500</div><div style="font-size:10px;color:var(--muted);margin-top:2px;">500 plus grandes entreprises US</div></div>
-          <span class="ap" style="background:rgba(79,163,255,0.1);color:var(--blue);">175 €</span>
+          <span class="ap" style="background:rgba(79,163,255,0.1);color:var(--blue);">150 €</span>
         </div>
         <div style="display:flex;align-items:center;gap:10px;">
           <span class="tkr">500</span>
@@ -783,7 +785,7 @@ label.fl{display:block;font-size:10px;color:var(--muted);text-transform:uppercas
       <div style="background:var(--surface2);border:1px solid rgba(167,139,250,0.2);border-radius:12px;padding:14px;">
         <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
           <div><div style="font-weight:700;font-size:14px;">Amundi MSCI Europe</div><div style="font-size:10px;color:var(--muted);margin-top:2px;">Grandes caps européennes</div></div>
-          <span class="ap" style="background:rgba(167,139,250,0.1);color:var(--purple);">105 €</span>
+          <span class="ap" style="background:rgba(167,139,250,0.1);color:var(--purple);">100 €</span>
         </div>
         <div style="display:flex;align-items:center;gap:10px;">
           <span class="tkr">AEEM</span>
@@ -854,43 +856,14 @@ label.fl{display:block;font-size:10px;color:var(--muted);text-transform:uppercas
       <div class="tli"><div class="tld" style="color:var(--blue)"></div><div class="tldate" style="color:var(--blue)">Mois 2 — 3</div><div class="tltitle">📚 Apprentissage et routine</div><div class="tlbody">Continuer les achats d'ETF chaque mois. Consulter ton portefeuille 1 fois par semaine max. Se renseigner sur les actions de la liste. Ne pas paniquer si les marchés baissent — c'est normal et temporaire.</div><div class="tltags"><span class="chip cb">Routine investissement</span><span class="chip cg">Veille marché</span></div></div>
       <div class="tli"><div class="tld" style="color:var(--purple)"></div><div class="tldate" style="color:var(--purple)">Mois 4 — 6</div><div class="tltitle">📈 Ajout des actions</div><div class="tlbody">Si tu te sens à l'aise, ajouter 1 ou 2 actions. Rester dans la répartition 80% ETF / 20% actions. Utilise l'onglet Marchés pour vérifier le signal avant d'acheter.</div><div class="tltags"><span class="chip cp">1-2 actions max</span><span class="chip cg">Rééquilibrage</span></div></div>
       <div class="tli"><div class="tld" style="color:var(--yellow)"></div><div class="tldate" style="color:var(--yellow)">Mois 12 — Bilan annuel</div><div class="tltitle">🔍 Premier bilan complet</div><div class="tlbody">Faire le point sur les performances. Rééquilibrer si besoin. Ajuster les montants si ta situation a évolué. Tu as épargné ~12 000 € — félicite-toi !</div><div class="tltags"><span class="chip cy">Bilan annuel</span><span class="chip cb">Rééquilibrage si besoin</span></div></div>
-      <div class="tli"><div class="tld" style="color:var(--blue)"></div><div class="tldate" style="color:var(--blue)">Mois 24 — Mi-parcours</div><div class="tltitle">⚖️ Bilan intermédiaire</div><div class="tlbody">Deuxième bilan annuel. Vérifier la progression dans le Tracker. Ajuster si les marchés ont fortement évolué. Envisager de sécuriser quelques plus-values si elles sont importantes.</div><div class="tltags"><span class="chip cb">~24 000 € accumulés</span><span class="chip cy">Révision stratégie</span></div></div>
-      <div class="tli"><div class="tld" style="color:var(--green)"></div><div class="tldate" style="color:var(--green)">Mois 36 — Objectif !</div><div class="tltitle">🏆 Point d'arrivée</div><div class="tlbody">Capital investi : ~36 000 €. Plus-values estimées : ~5 000–8 000 €. Livrets : ~10 800 €. <strong style="color:var(--green)">Total estimé : 38 000–44 000 €</strong>. Pour 50 000 €, il faut de bonnes performances ou ~1 200 €/mois.</div><div class="tltags"><span class="chip cg">38k–44k € réaliste</span><span class="chip cb">50k si marchés favorables</span></div></div>
+      <div class="tli"><div class="tld" style="color:var(--blue)"></div><div class="tldate" style="color:var(--blue)">Mois 24 — Mi-parcours</div><div class="tltitle">⚖️ Bilan intermédiaire</div><div class="tlbody">Deuxième bilan annuel. Vérifier la progression dans le Tracker. Ajuster si les marchés ont fortement évolué. Envisager de sécuriser quelques plus-values si elles sont importantes.</div><div class="tltags"><span class="chip cb">~18 000 € accumulés</span><span class="chip cy">Révision stratégie</span></div></div>
+      <div class="tli"><div class="tld" style="color:var(--green)"></div><div class="tldate" style="color:var(--green)">Mois 36 — Objectif !</div><div class="tltitle">🏆 Point d'arrivée</div><div class="tlbody">Capital investi : ~27 000 €. Plus-values estimées : ~3 000–5 000 €. Livrets : ~8 640 €. <strong style="color:var(--green)">Total estimé : 38 000–44 000 €</strong>. Pour 50 000 €, il faut de bonnes performances ou ~900 €/mois.</div><div class="tltags"><span class="chip cg">38k–44k € réaliste</span><span class="chip cb">50k si marchés favorables</span></div></div>
     </div>
   </div>
 </div>
 
 
 <!-- ====== ONGLET 6 — RÈGLES ====== -->
-<div class="tab-page" id="tab-6">
-  <div class="page-hero">
-    <div class="page-tag" style="background:rgba(232,121,249,0.08);color:#e879f9;border:1px solid rgba(232,121,249,0.22);">🏆 Onglet 6</div>
-    <div class="page-title">Règles d'or & <span style="color:#e879f9">Pièges</span></div>
-    <div class="page-sub">Les 6 principes à respecter et les 3 erreurs à éviter absolument.</div>
-  </div>
-
-  <div class="sl">Les 6 règles d'or</div>
-  <div class="g3 mb">
-    <div class="rc"><div class="ri">📅</div><div class="rt">Investir chaque mois</div><div class="rd">Le DCA mensuel lisse le risque. Peu importe si les marchés montent ou descendent.</div></div>
-    <div class="rc"><div class="ri">🧘</div><div class="rt">Ne pas surveiller chaque jour</div><div class="rd">1 fois/mois max. La volatilité quotidienne est du bruit, pas de l'information utile.</div></div>
-    <div class="rc"><div class="ri">🚫</div><div class="rt">Ne pas vendre dans le rouge</div><div class="rd">Une perte n'est réelle que si tu vends. Les corrections sont temporaires.</div></div>
-    <div class="rc"><div class="ri">🔄</div><div class="rt">Réinvestir les dividendes</div><div class="rd">ETF "capitalisants" = dividendes réinvestis automatiquement = intérêts composés.</div></div>
-    <div class="rc"><div class="ri">🛡️</div><div class="rt">Garder son filet de sécurité</div><div class="rd">Ne touche jamais aux 3 000–4 000 € du Livret A sauf vraie urgence.</div></div>
-    <div class="rc"><div class="ri">📊</div><div class="rt">Bilan annuel</div><div class="rd">Chaque année : rééquilibre, ajuste les montants si ta situation a changé.</div></div>
-  </div>
-
-  <div class="sl">Les 3 erreurs à éviter</div>
-  <div class="g3 mb">
-    <div style="background:rgba(255,107,107,0.06);border:1px solid rgba(255,107,107,0.2);border-radius:12px;padding:18px;"><div style="font-size:22px;margin-bottom:7px;">❌</div><div style="font-family:'Syne',sans-serif;font-weight:700;margin-bottom:5px;color:var(--red);font-size:13px;">Les Cryptos</div><div style="font-size:11px;color:var(--muted2);">Trop volatile pour un objectif à 3 ans. Risque de perdre une grande partie au mauvais moment.</div></div>
-    <div style="background:rgba(255,107,107,0.06);border:1px solid rgba(255,107,107,0.2);border-radius:12px;padding:18px;"><div style="font-size:22px;margin-bottom:7px;">❌</div><div style="font-family:'Syne',sans-serif;font-weight:700;margin-bottom:5px;color:var(--red);font-size:13px;">Trop d'actions seules</div><div style="font-size:11px;color:var(--muted2);">Risque concentré. 80% ETF reste le socle indispensable pour diversifier.</div></div>
-    <div style="background:rgba(255,107,107,0.06);border:1px solid rgba(255,107,107,0.2);border-radius:12px;padding:18px;"><div style="font-size:22px;margin-bottom:7px;">❌</div><div style="font-family:'Syne',sans-serif;font-weight:700;margin-bottom:5px;color:var(--red);font-size:13px;">Assurance-vie (pour l'instant)</div><div style="font-size:11px;color:var(--muted2);">Fiscalement intéressante après 8 ans seulement. Hors sujet pour 3 ans.</div></div>
-  </div>
-
-  <div class="sl">✅ Checklist mensuelle</div>
-  <div class="card mb"><div id="checklist" style="display:flex;flex-direction:column;gap:9px;"></div></div>
-
-  <div class="warn"><span>⚠️</span><div><strong>Avertissement :</strong> Ce document est fourni à titre informatif uniquement. Il ne constitue pas un conseil en investissement. Tout investissement comporte un risque de perte en capital. Consulte un Conseiller en Gestion de Patrimoine (CGP) indépendant pour un suivi personnalisé.</div></div>
-</div>
 
 </div><!-- /page-wrap -->
 
@@ -901,7 +874,8 @@ function switchTab(n){
   document.querySelectorAll('.tab-btn').forEach(b=>b.classList.remove('active'));
   document.querySelectorAll('.mob-btn').forEach(b=>b.classList.remove('active'));
   document.getElementById('tab-'+n).classList.add('active');
-  document.querySelector('.tab-btn[data-tab="'+n+'"]').classList.add('active');
+  const tb=document.querySelector('.tab-btn[data-tab="'+n+'"]');
+  if(tb) tb.classList.add('active');
   const mb=document.querySelector('.mob-btn[data-tab="'+n+'"]');
   if(mb) mb.classList.add('active');
   window.scrollTo({top:0,behavior:'smooth'});
@@ -914,15 +888,17 @@ function lss(k,v){try{localStorage.setItem(k,JSON.stringify(v));}catch(e){}}
 
 // === TAB 1 — BILAN ===
 const DC=[
-  {emoji:'🏠',name:'Loyer',amount:890},
-  {emoji:'📡',name:'Box internet',amount:39.99},
-  {emoji:'🎓',name:'Crédit école',amount:80},
-  {emoji:'📱',name:'Téléphone',amount:9.99},
-  {emoji:'⚡',name:'Électricité',amount:40},
-  {emoji:'🚗',name:'Assurance voiture',amount:76},
-  {emoji:'🏥',name:'Mutuelle',amount:97},
+  {emoji:'🏠',name:'Loyer',amount:305},
+  {emoji:'🚗',name:'Assurance voiture',amount:102},
+  {emoji:'📡',name:'Box internet',amount:14.95},
+  {emoji:'🏋',name:'Basic Fit',amount:34.99},
+  {emoji:'🎨',name:'Adobe',amount:24.99},
+  {emoji:'🎌',name:'Crunchyroll',amount:8.99},
+  {emoji:'🎵',name:'Apple Music',amount:2.99},
+  {emoji:'💳',name:'Credit canape',amount:133.5},
+  {emoji:'🍵',name:'TAO',amount:13},
+  {emoji:'⚡',name:'Electricite',amount:40},
   {emoji:'🏡',name:'Assurance habitation',amount:20},
-  {emoji:'⛽',name:'Essence',amount:150},
 ];
 let charges=ls('charges',DC.map((c,i)=>({...c,id:i+1})));
 let nid=charges.reduce((m,c)=>Math.max(m,c.id),0)+1;
@@ -978,7 +954,7 @@ function recalc(){
 }
 
 // === TAB 2 — TRACKER ===
-const GOALS={pea:25200,la:4000,ldds:3600,total:50000};
+const GOALS={pea:18000,la:5400,ldds:3600,total:27000};
 let ts=ls('epargne_tracker',{pea:0,la:0,ldds:0,nb:0,history:[]});
 
 function savets(){lss('epargne_tracker',ts);}
@@ -1017,11 +993,11 @@ function updT(){
   document.getElementById('s-nb').textContent=ts.nb;
   const r=document.getElementById('s-rythme');
   if(!ts.nb){r.textContent='—';r.style.color='var(--text)';}
-  else if(moy>=1000){r.textContent='🔥 Excellent';r.style.color='var(--green)';}
-  else if(moy>=700){r.textContent='👍 Bon';r.style.color='var(--blue)';}
+  else if(moy>=750){r.textContent='🔥 Excellent';r.style.color='var(--green)';}
+  else if(moy>=500){r.textContent='👍 Bon';r.style.color='var(--blue)';}
   else{r.textContent='⚠️ Faible';r.style.color='var(--yellow)';}
   document.getElementById('hero-bar').style.width=tp+'%';
-  document.getElementById('hero-lbl').textContent=tp.toFixed(1)+'% atteint · '+fmt(tot)+' sur 50 000 €';
+  document.getElementById('hero-lbl').textContent=tp.toFixed(1)+'% atteint · '+fmt(tot)+' sur 27 000 €';
   renderH();
 }
 function updG(k,v,g,col,grad){
@@ -1445,6 +1421,7 @@ window.addEventListener('load', () => {
     </div>
   </div>
 </div>
+
 
 </body>
 </html>
